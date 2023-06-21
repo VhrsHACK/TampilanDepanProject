@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home bg-dark">
+    <Navbar/>
+    <Slideatas/>
+    <!-- <router-link class="btn btn-primary paragraf" :to="'/HomeCard'">Detail Char</router-link> -->
+    <footers/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+// bagian untuk import componnent (componen buat isi tampilan navbar,dll)
+import Navbar from '@/components/Navbar.vue';
+import Slideatas from '@/components/Slideatas.vue';
+import Footers from '@/components/footers.vue';
 
+
+// untuk memanggil variable import diatas
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
-  }
+    Navbar,
+    Slideatas,
+    Footers,
+}
 }
 </script>
